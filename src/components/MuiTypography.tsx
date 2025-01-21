@@ -7,8 +7,7 @@ const MuiTypography = () => {
       <Typography variant="h1"> Heading One </Typography>
       <Typography variant="h2"> Heading Two </Typography>
       <Typography variant="h3" className="color-w">
-        {" "}
-        Heading Three{" "}
+        Heading Three
       </Typography>
       <Typography variant="h4"> Heading Four </Typography>
       <Typography variant="h5"> Heading Five </Typography>
