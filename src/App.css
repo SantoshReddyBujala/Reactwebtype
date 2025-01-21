@@ -1,5 +1,7 @@
 @import url('https://fonts.cdnfonts.com/css/neucha');
 
+
+
 .app {
   background-color: #2f74c0;
   height: 100vh;
@@ -9,7 +11,9 @@
   align-items: center;
   font-family: "Neucha", cursive;
 }
-
+.color-w{
+  color: white;
+}
 .heading {
   color: gainsboro;
   display: flex;
