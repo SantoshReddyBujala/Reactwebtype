@@ -1,15 +1,29 @@
-import React from "react";
+import React, { useState } from "react";
 import {
   Stack,
   Button,
   IconButton,
+  ButtonGroup,
+  ToggleButtonGroup,
+  ToggleButton,
 } from "../../node_modules/@mui/material/index";
 import SendIcon from "@mui/icons-material/Send";
+import FormatBoldIcon from "@mui/icons-material/FormatBold";
+import FormatItolicIcon from "@mui/icons-material/FormatItalic";
+import FormatUnderlinedIcon from "@mui/icons-material/FormatUnderlined";
 
 const MuiButton = () => {
+  const [formats, setFormats] = useState<string[]>([]);
+  console.log(formats);
+  const handleFormatChanges = (
+    _event: React.MouseEvent<HTMLElement>,
+    updatedFormats: string[]
+  ) => {
+    setFormats(updatedFormats);
+  };
   return (
-    <>
-      <Stack spacing={2} direction="row" className="p-4">
+    <Stack className="p-4">
+      <Stack spacing={2} direction="row">
         <Button variant="text" href="https://www.google.com">
           Test
         </Button>
@@ -81,7 +95,80 @@ const MuiButton = () => {
           <SendIcon />
         </IconButton>
       </Stack>
-    </>
+      <Stack direction="row">
+        <ButtonGroup color="success" variant="outlined">
+          <Button>Left</Button>
+          <Button>Center</Button>
+          <Button>Right</Button>
+        </ButtonGroup>
+      </Stack>
+      <Stack direction="row">
+        <ButtonGroup color="success" variant="text" className="p-4">
+          <Button>Left</Button>
+          <Button>Center</Button>
+          <Button>Right</Button>
+        </ButtonGroup>
+      </Stack>
+      <Stack direction="row">
+        <ButtonGroup
+          color="success"
+          variant="contained"
+          orientation="vertical"
+          size="small"
+          aria-label="Button group with props and operations"
+        >
+          <Button onClick={() => alert("Left button clicked")}>Left</Button>
+          <Button onClick={() => console.log("Center Button clicked")}>
+            Center
+          </Button>
+          <Button
+            onClick={() => console.warn("Right button clicked with warning")}
+          >
+            Right
+          </Button>
+        </ButtonGroup>
+      </Stack>
+      <Stack direction="row" className="p-4">
+        <ToggleButtonGroup
+          aria-label="Text formating"
+          value={formats}
+          onChange={handleFormatChanges}
+          size="small"
+          color="warning"
+        >
+          <ToggleButton value="bold" aria-label="Bold">
+            <FormatBoldIcon />
+          </ToggleButton>
+          <ToggleButton value="italic" aria-label="Italic">
+            <FormatItolicIcon />
+          </ToggleButton>
+          <ToggleButton value="underlined" aria-label="Underlined">
+            <FormatUnderlinedIcon />
+          </ToggleButton>
+        </ToggleButtonGroup>
+      </Stack>
+      <Stack className="p-4">
+        <ToggleButtonGroup
+          aria-label="Text formating"
+          value={formats}
+          onChange={handleFormatChanges}
+          size="small"
+          color="warning"
+          orientation="vertical"
+          exclusive
+        >
+          <ToggleButton value="bold" aria-label="Bold">
+            <FormatBoldIcon />
+          </ToggleButton>
+          <ToggleButton value="italic" aria-label="Italic">
+            <FormatItolicIcon />
+          </ToggleButton>
+          <ToggleButton value="underlined" aria-label="Underlined">
+            <FormatUnderlinedIcon />
+          </ToggleButton>
+        </ToggleButtonGroup>
+      </Stack>
+    </Stack>
   );
 };
 
