@@ -4,12 +4,14 @@ import InputField from "./components/InputField";
 import MuiTypography from "./components/MuiTypography";
 import MuiButton from "./components/MuiButton";
 import MuiTextField from "./components/MuiTextField";
+import MuiSelect from "./components/MuiSelect";
 
 const App: React.FC = () => {
   return (
     <div className="app">
       <span className="heading">My Task</span>
       {/* <InputField /> */}
+      <MuiSelect />
       <MuiTextField />
       <MuiButton />
       <MuiTypography />
