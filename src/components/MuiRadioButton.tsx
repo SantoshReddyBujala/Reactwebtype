@@ -8,7 +8,7 @@ import {
   RadioGroup,
   SelectChangeEvent,
 } from "@mui/material";
-import React, { ReactHTMLElement, useState } from "react";
+import React from "react";
 
 const MuiRadioButton = () => {
   const [value, setValue] = React.useState("");
