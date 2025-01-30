@@ -7,12 +7,14 @@ import MuiTextField from "./components/MuiTextField";
 import MuiSelect from "./components/MuiSelect";
 import MuiRadioButton from "./components/MuiRadioButton";
 import MuiCheckBox from "./components/MuiCheckBox";
+import MuiSwitch from "./components/MuiSwitch";
 
 const App: React.FC = () => {
   return (
     <div className="app">
       <span className="heading">My Task</span>
       {/* <InputField /> */}
+      <MuiSwitch />
       <MuiCheckBox />
       <MuiRadioButton />
       <MuiSelect />
