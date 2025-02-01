@@ -10,12 +10,14 @@ import MuiCheckBox from "./components/MuiCheckBox";
 import MuiSwitch from "./components/MuiSwitch";
 import MuiRatings from "./components/MuiRatings";
 import MuiAutoComplete from "./components/MuiAutoComplete";
+import MuiLayout from "./components/MuiLayout";
 
 const App: React.FC = () => {
   return (
     <div className="app">
       <span className="heading">My Task</span>
       {/* <InputField /> */}
+      <MuiLayout />
       <MuiAutoComplete />
       <MuiRatings />
       <MuiSwitch />
