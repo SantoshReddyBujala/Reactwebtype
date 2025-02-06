@@ -13,12 +13,14 @@ import MuiAutoComplete from "./components/MuiAutoComplete";
 import MuiLayout from "./components/MuiLayout";
 import MuiCard from "./components/MuiCard";
 import MuiAccordian from "./components/MuiAccordian";
+import MuiImageList from "./components/MuiImageList";
 
 const App: React.FC = () => {
   return (
     <div className="app">
       <span className="heading">My Task</span>
       {/* <InputField /> */}
+      <MuiImageList />
       <MuiAccordian />
       <MuiCard />
       <MuiLayout />
