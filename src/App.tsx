@@ -15,11 +15,15 @@ import MuiCard from "./components/MuiCard";
 import MuiAccordian from "./components/MuiAccordian";
 import MuiImageList from "./components/MuiImageList";
 import MuiNavbar from "./components/MuiNavbar";
+import MuiMenu from "./components/MuiMenu";
+import MuiLinks from "./components/MuiLinks";
 
 const App: React.FC = () => {
   return (
     <div className="app">
-      <MuiNavbar />
+      <MuiMenu />
+      <MuiLinks />
+      {/* <MuiNavbar /> */}
       <span className="heading">My Task</span>
       {/* <InputField /> */}
       <MuiImageList />
