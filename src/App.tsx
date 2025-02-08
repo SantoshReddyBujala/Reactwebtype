@@ -17,12 +17,18 @@ import MuiImageList from "./components/MuiImageList";
 import MuiNavbar from "./components/MuiNavbar";
 import MuiMenu from "./components/MuiMenu";
 import MuiLinks from "./components/MuiLinks";
+import MuiBreadcrumbs from "./components/MuiBreadcrumbs";
+import MuiDrawer from "./components/MuiDrawer";
+import MuiSpeedDial from "./components/MuiSpeedDial";
 
 const App: React.FC = () => {
   return (
     <div className="app">
       <MuiMenu />
-      <MuiLinks />
+      <MuiBreadcrumbs />
+      <MuiDrawer />
+      <MuiSpeedDial />
+      {/* <MuiLinks /> */}
       {/* <MuiNavbar /> */}
       <span className="heading">My Task</span>
       {/* <InputField /> */}
