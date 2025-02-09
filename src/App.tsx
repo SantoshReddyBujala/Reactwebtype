@@ -20,19 +20,22 @@ import MuiLinks from "./components/MuiLinks";
 import MuiBreadcrumbs from "./components/MuiBreadcrumbs";
 import MuiDrawer from "./components/MuiDrawer";
 import MuiSpeedDial from "./components/MuiSpeedDial";
+import MuiBottomNav from "./components/MuiBottomNav";
+import MuiAvatar from "./components/MuiAvatar";
 
 const App: React.FC = () => {
   return (
     <div className="app">
       <MuiMenu />
-      <MuiBreadcrumbs />
+      <MuiAvatar />
+      {/* <MuiBreadcrumbs />
       <MuiDrawer />
-      <MuiSpeedDial />
+      <MuiSpeedDial /> */}
       {/* <MuiLinks /> */}
       {/* <MuiNavbar /> */}
-      <span className="heading">My Task</span>
+      {/* <span className="heading">My Task</span> */}
       {/* <InputField /> */}
-      <MuiImageList />
+      {/* <MuiImageList />
       <MuiAccordian />
       <MuiCard />
       <MuiLayout />
@@ -44,7 +47,8 @@ const App: React.FC = () => {
       <MuiSelect />
       <MuiTextField />
       <MuiButton />
-      <MuiTypography />
+      <MuiTypography /> */}
+      <MuiBottomNav />
     </div>
   );
 };
