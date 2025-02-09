@@ -22,12 +22,16 @@ import MuiDrawer from "./components/MuiDrawer";
 import MuiSpeedDial from "./components/MuiSpeedDial";
 import MuiBottomNav from "./components/MuiBottomNav";
 import MuiAvatar from "./components/MuiAvatar";
+import MuiBadge from "./components/MuiBadge";
+import MuiList from "./components/MuiList";
 
 const App: React.FC = () => {
   return (
     <div className="app">
       <MuiMenu />
       <MuiAvatar />
+      <MuiBadge />
+      <MuiList />
       {/* <MuiBreadcrumbs />
       <MuiDrawer />
       <MuiSpeedDial /> */}
