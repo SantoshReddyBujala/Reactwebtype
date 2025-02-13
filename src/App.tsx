@@ -25,6 +25,7 @@ import MuiAvatar from "./components/MuiAvatar";
 import MuiBadge from "./components/MuiBadge";
 import MuiList from "./components/MuiList";
 import MuiChips from "./components/MuiChips";
+import MuiTooltip from "./components/MuiTooltip";
 
 const App: React.FC = () => {
   return (
@@ -32,8 +33,9 @@ const App: React.FC = () => {
       <MuiMenu />
       <MuiAvatar />
       <MuiBadge />
-      <MuiList />
-      <MuiChips />
+      {/* <MuiList /> */}
+      {/* <MuiChips /> */}
+      <MuiTooltip />
       {/* <MuiBreadcrumbs />
       <MuiDrawer />
       <MuiSpeedDial /> */}
