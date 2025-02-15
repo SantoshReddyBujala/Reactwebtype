@@ -30,6 +30,7 @@ import MuiTable from "./components/MuiTable";
 import MuiAlert from "./components/MuiAlert";
 import MuiSnackbar from "./components/MuiSnackbar";
 import MuiDialog from "./components/MuiDialog";
+import MuiProgressbar from "./components/MuiProgressbar";
 
 const App: React.FC = () => {
   return (
@@ -40,6 +41,7 @@ const App: React.FC = () => {
       <MuiAlert />
       <MuiSnackbar />
       <MuiDialog />
+      <MuiProgressbar />
       {/* <MuiTable /> */}
       {/* <MuiList /> */}
       {/* <MuiChips /> */}
