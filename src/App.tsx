@@ -33,12 +33,14 @@ import MuiDialog from "./components/MuiDialog";
 import MuiProgressbar from "./components/MuiProgressbar";
 import MuiSkeleton from "./components/MuiSkeleton";
 import MuiLoadingButton from "./components/MuiLoadingButton";
+import MuiDate from "./components/MuiDate";
 
 const App: React.FC = () => {
   return (
     <div className="app">
       <MuiMenu />
-      <MuiLoadingButton />
+      <MuiDate />
+      {/* <MuiLoadingButton /> */}
       {/* <MuiAvatar />
       <MuiBadge />
       <MuiAlert />
