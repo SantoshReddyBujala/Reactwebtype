@@ -35,6 +35,7 @@ import MuiSkeleton from "./components/MuiSkeleton";
 import MuiLoadingButton from "./components/MuiLoadingButton";
 import MuiDate from "./components/MuiDate";
 import MuiTabs from "./components/MuiTabs";
+import MuiTimeline from "./components/MuiTimeline";
 
 const App: React.FC = () => {
   return (
@@ -42,6 +43,7 @@ const App: React.FC = () => {
       <MuiMenu />
       <MuiDate />
       <MuiTabs />
+      <MuiTimeline />
       {/* <MuiLoadingButton /> */}
       {/* <MuiAvatar />
       <MuiBadge />
