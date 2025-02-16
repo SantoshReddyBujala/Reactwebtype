@@ -1,10 +1,11 @@
-import React from "react";
-import dayjs, { Dayjs } from "dayjs";
-import { DemoContainer } from "@mui/x-date-pickers/internals/demo";
-import { LocalizationProvider } from "@mui/x-date-pickers/LocalizationProvider";
+import { TimePicker } from "@mui/x-date-pickers";
 import { AdapterDayjs } from "@mui/x-date-pickers/AdapterDayjs";
 import { DatePicker } from "@mui/x-date-pickers/DatePicker";
-import { DateTimePicker, TimePicker } from "@mui/x-date-pickers";
+import { DemoContainer } from "@mui/x-date-pickers/internals/demo";
+import { LocalizationProvider } from "@mui/x-date-pickers/LocalizationProvider";
+import dayjs, { Dayjs } from "dayjs";
+import React from "react";
+import { DateRangePicker } from "@mui/x-date-pickers-pro/DateRangePicker";
 
 const MuiDate = () => {
   const [value, setValue] = React.useState<Dayjs | null>(dayjs("2022-04-17"));
@@ -25,11 +26,7 @@ const MuiDate = () => {
           value={value}
           onChange={(newValue: any) => setValue(newValue)}
         />
-        <DateTimePicker
-          label="Time picker"
-          value={value}
-          onChange={(newValue: any) => setValue(newValue)}
-        />
+        <DateRangePicker localeText={{ start: "Check-in", end: "Check-out" }} />
       </DemoContainer>
     </LocalizationProvider>
   );
