@@ -38,36 +38,49 @@ import MuiTabs from "./components/MuiTabs";
 import MuiTimeline from "./components/MuiTimeline";
 import MuiMasonry from "./components/Masonry";
 import MuiResponsiveness from "./components/MuiResponsiveness";
+import { createTheme, ThemeProvider } from "@mui/material";
+
+const theme = createTheme({
+  status: {
+    danger: "#d32f2f",
+  },
+  palette: {
+    secondary: {
+      main: "#4dd623",
+    },
+  },
+});
 
 const App: React.FC = () => {
   return (
-    <div className="app">
-      <MuiMenu />
-      <MuiDate />
-      <MuiTabs />
-      <MuiTimeline />
-      <MuiMasonry />
-      <MuiResponsiveness />
-      {/* <MuiLoadingButton /> */}
-      {/* <MuiAvatar />
+    <ThemeProvider theme={theme}>
+      <div className="app">
+        <MuiMenu />
+        <MuiDate />
+        <MuiTabs />
+        <MuiTimeline />
+        <MuiMasonry />
+        <MuiResponsiveness />
+        {/* <MuiLoadingButton /> */}
+        {/* <MuiAvatar />
       <MuiBadge />
       <MuiAlert />
       <MuiSnackbar />
       <MuiDialog /> */}
-      {/* <MuiProgressbar />
+        {/* <MuiProgressbar />
       <MuiSkeleton /> */}
-      {/* <MuiTable /> */}
-      {/* <MuiList /> */}
-      {/* <MuiChips /> */}
-      {/* <MuiTooltip /> */}
-      {/* <MuiBreadcrumbs />
+        {/* <MuiTable /> */}
+        {/* <MuiList /> */}
+        {/* <MuiChips /> */}
+        {/* <MuiTooltip /> */}
+        {/* <MuiBreadcrumbs />
       <MuiDrawer />
       <MuiSpeedDial /> */}
-      {/* <MuiLinks /> */}
-      {/* <MuiNavbar /> */}
-      {/* <span className="heading">My Task</span> */}
-      {/* <InputField /> */}
-      {/* <MuiImageList />
+        {/* <MuiLinks /> */}
+        {/* <MuiNavbar /> */}
+        {/* <span className="heading">My Task</span> */}
+        {/* <InputField /> */}
+        {/* <MuiImageList />
       <MuiAccordian />
       <MuiCard />
       <MuiLayout />
@@ -80,8 +93,9 @@ const App: React.FC = () => {
       <MuiTextField />
       <MuiButton />
       <MuiTypography /> */}
-      {/* <MuiBottomNav /> */}
-    </div>
+        {/* <MuiBottomNav /> */}
+      </div>
+    </ThemeProvider>
   );
 };
 
